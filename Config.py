@@ -6,7 +6,7 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'LuciferMoringstar_Robot')
-API_ID = int(environ['5530754'])
+API_ID = int(environ[5530754])
 API_HASH = environ['5e51ecf5945605c711fffe7b376fa2a8']
 BOT_TOKEN = environ['5694714864:AAHBWW5y2eZ-6xyGuygZOxhLWV5CxaA40HU
 ']
@@ -15,7 +15,7 @@ BOT_TOKEN = environ['5694714864:AAHBWW5y2eZ-6xyGuygZOxhLWV5CxaA40HU
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 
-BROADCAST_CHANNEL = int(os.environ.get("BROADCAST_CHANNEL", ""))
+BROADCAST_CHANNEL = int(os.environ.get("BROADCAST_CHANNEL", -1001696170170))
 ADMIN_ID = set(int(x) for x in os.environ.get("ADMIN_ID", "").split())
 DB_URL = os.environ.get("DATABASE_1", "")
 BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST", True))
