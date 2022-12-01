@@ -30,7 +30,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(admin) for admin in environ.get().split()]
 TUTORIAL = "https://youtu.be/5hnYOKBzyi8"
 # MongoDB information
-DATABASE_URI = environ[]
+DATABASE_URI = environ["mongodb+srv://123:123@cluster1.7wqy6xv.mongodb.net/?retryWrites=true&w=majority"]
 DATABASE_NAME = environ['LuciferMoringstar_Robot']
 COLLECTION_NAME = environ.get('channel_files')
 
