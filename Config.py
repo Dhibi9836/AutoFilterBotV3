@@ -31,8 +31,8 @@ AUTH_GROUPS = [int(admin) for admin in environ.get().split()]
 TUTORIAL = "https://youtu.be/5hnYOKBzyi8"
 # MongoDB information
 DATABASE_URI = environ[]
-DATABASE_NAME = environ['BOT_NAME']
-COLLECTION_NAME = environ.get('Telegram_files')
+DATABASE_NAME = environ['LuciferMoringstar_Robot']
+COLLECTION_NAME = environ.get('channel_files')
 
 # Messages
 default_start_msg = """
