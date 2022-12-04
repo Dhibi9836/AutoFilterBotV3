@@ -5,19 +5,19 @@ from os import environ
 id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
-SESSION = environ.get('SESSION', 'LuciferMoringstar_Robot')
-API_ID = int(environ['API_ID'])
-API_HASH = environ['API_HASH']
-BOT_TOKEN = environ['BOT_TOKEN']
+SESSION = "LuciferMoringstar_Robot"
+API_ID = 5530754
+API_HASH = "5e51ecf5945605c711fffe7b376fa2a8"
+BOT_TOKEN = "5694714864:AAHBWW5y2eZ-6xyGuygZOxhLWV5CxaA40HU"
 
 # Bot settings
-CACHE_TIME = int(environ.get('CACHE_TIME', 300))
-USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
+CACHE_TIME = 300
+USE_CAPTION_FILTER = False
 
-BROADCAST_CHANNEL = int(os.environ.get("BROADCAST_CHANNEL", ""))
-ADMIN_ID = set(int(x) for x in os.environ.get("ADMIN_ID", "").split())
-DB_URL = os.environ.get("DATABASE_1", "")
-BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST", True))
+BROADCAST_CHANNEL = -1001865920944
+ADMIN_ID = 1170610542
+DB_URL = "mongodb+srv://123:123@cluster1.7wqy6xv.mongodb.net/?retryWrites=true&w=majority"
+BROADCAST_AS_COPY = True
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ['ADMINS'].split()]
